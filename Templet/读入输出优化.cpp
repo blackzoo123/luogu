@@ -1,15 +1,12 @@
-void read(int &x)
+void read(int &x)                             //读入优化
 {
     int f=1;x=0;char s=getchar();
     while(s<'0'||s>'9'){if(s=='-')f=-1;s=getchar();}
     while(s>='0'&&s<='9'){x=x*10+s-'0';s=getchar();}
     x*=f;
 }
-
----------------------
-
-本文来自 青天璇 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/c20190102/article/details/69710341?utm_source=copy 
-void print(int x)//这里当然不用实参
+ 
+void print(int x)                      //输出优化
 {
     if(x<0)//负数
     {
