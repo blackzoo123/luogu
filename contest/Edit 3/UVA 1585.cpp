@@ -20,7 +20,7 @@ int main()
                t++;
                sum+=t;
            }
-           if(s[i]=='X')
+           else
            {
                t=0;
            }
@@ -28,4 +28,3 @@ int main()
        cout<<sum<<endl;
    }
    return 0;
-}
